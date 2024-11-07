@@ -56,8 +56,7 @@ class FlutterRingtonePlayer {
     return FlutterRingtonePlayerPlatform.instance
         .playNotification(volume: volume, looping: looping, asAlarm: asAlarm);
   }
-
-  /// Play default system ringtone (looping on Android)
+  // Play default system ringtone (looping on Android)
   static Future<void> playRingtone({
     double? volume,
     bool looping = true,
