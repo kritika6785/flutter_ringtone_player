@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('playAlarm'),
                   onPressed: () {
-                    FlutterRingtonePlayer().playAlarm();
+                    FlutterRingtonePlayer.playAlarm();
                   },
                 ),
               ),
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('playAlarm asAlarm: false'),
                   onPressed: () {
-                    FlutterRingtonePlayer().playAlarm(asAlarm: false);
+                    FlutterRingtonePlayer.playAlarm(asAlarm: false);
                   },
                 ),
               ),
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('playNotification'),
                   onPressed: () {
-                    FlutterRingtonePlayer().playNotification();
+                    FlutterRingtonePlayer.playNotification();
                   },
                 ),
               ),
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('playRingtone'),
                   onPressed: () {
-                    FlutterRingtonePlayer().playRingtone();
+                    FlutterRingtonePlayer.playRingtone();
                   },
                 ),
               ),
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('Play from asset (iphone.mp3)'),
                   onPressed: () {
-                    FlutterRingtonePlayer()
+                    FlutterRingtonePlayer
                         .play(fromAsset: "assets/iphone.mp3");
                   },
                 ),
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('Play from asset (android.wav)'),
                   onPressed: () {
-                    FlutterRingtonePlayer()
+                    FlutterRingtonePlayer
                         .play(fromAsset: "assets/android.wav");
                   },
                 ),
@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('play'),
                   onPressed: () {
-                    FlutterRingtonePlayer().play(
+                    FlutterRingtonePlayer.play(
                       android: AndroidSounds.notification,
                       ios: IosSounds.glass,
                       looping: true,
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   child: const Text('stop'),
                   onPressed: () {
-                    FlutterRingtonePlayer().stop();
+                    FlutterRingtonePlayer.stop();
                   },
                 ),
               ),

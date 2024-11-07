@@ -7,28 +7,28 @@ void main() {
 
   const channelName = 'flutter_ringtone_player';
 
-  final player = FlutterRingtonePlayer();
+
 
   test('play', () async {
     _initializeFakeRingtoneChannel(channelName, 'play');
-    await player.play(android: AndroidSounds.alarm, ios: IosSounds.alarm);
+    await FlutterRingtonePlayer.play(android: AndroidSounds.alarm, ios: IosSounds.alarm);
   });
   test('playAlarm', () async {
     _initializeFakeRingtoneChannel(channelName, 'play');
-    await player.playAlarm();
+    await FlutterRingtonePlayer.playAlarm();
   });
   test('playNotification', () async {
     _initializeFakeRingtoneChannel(channelName, 'play');
-    await player.playNotification();
+    await FlutterRingtonePlayer.playNotification();
   });
   test('playRingtone', () async {
     _initializeFakeRingtoneChannel(channelName, 'play');
-    await player.playRingtone();
+    await FlutterRingtonePlayer.playRingtone();
   });
 
   test('stop', () async {
     _initializeFakeRingtoneChannel(channelName, 'stop');
-    await player.stop();
+    await FlutterRingtonePlayer.stop();
   });
 }
 
